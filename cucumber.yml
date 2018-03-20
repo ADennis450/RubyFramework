@@ -1,0 +1,2 @@
+default_html: -p pretty --format html --out features\reports\test_results.html
+pretty: -f pretty
