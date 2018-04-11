@@ -1,10 +1,9 @@
 @run
-Feature: Sogeti
+Feature: Google Search
 
-  Scenario: Navigate To Sogeti Home Page
-
-
-  Scenario: Go to Sogeti.com
-    Given I navigate to "https://www.sogeti.com"
-    Given I do a sogeti search for "Techonology"
-    And I wait 10 seconds
+  Scenario: Go to Google
+    Given I navigate to "https://www.google.com"
+    Given I do a sogeti search for "Sogeti"
+    And I click on the sogeti link
+    And I wait 5 seconds
+    Then I should see "Sogeti"

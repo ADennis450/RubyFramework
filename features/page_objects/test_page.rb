@@ -4,9 +4,11 @@ class TestPage
   include PageObject
   text_field(:search, :id => 'lst-ib')
 
-  link(:sogeti_link, :href =>  'https://www.Sogeti.com')
+  text_field(:google_search, :id =>  'lst-ib')
 
-  link(:sogeti_search, :class => 'navbar-search')
+  button(:click_google_search, :class => 'lsb')
+
+  link( :sogeti_link, :href => 'https://www.sogeti.com/')
 
   def visit_url(value)
     @browser.goto(value)
