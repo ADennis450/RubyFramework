@@ -11,6 +11,8 @@ end
 
 Given(/^I do a search for "([^"]*)"$/) do |search_term|
   @test_page.google_search = search_term
+  sleep(2)
+  @test_page.click_google_search
   @test_page.click_google_search
 end
 
