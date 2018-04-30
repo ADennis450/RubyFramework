@@ -19,7 +19,11 @@ And(/^I wait (\d+) seconds$/) do |arg|
 end
 
 And(/^I click on the sogeti link$/) do
+  begin
   @test_page.sogeti_link
+  rescue
+    puts 'ERROR!'
+    end
 end
 
 Then(/^I should see "([^"]*)"$/) do |title|
