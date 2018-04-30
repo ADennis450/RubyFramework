@@ -1,2 +1,2 @@
-default_html: -p pretty --format html --out features\reports\test_results.html
+default_html: -p pretty --format html --out features\reports\test_results.html --format json --out features\reports\cucumberReport.json
 pretty: -f pretty
