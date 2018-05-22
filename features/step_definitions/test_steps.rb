@@ -47,3 +47,19 @@ end
 And(/^I open a new tab$/) do
   @test_page.open_tab
 end
+
+And(/^I click on the dropdown "([^"]*)"$/) do |arg|
+  @test_page.click_arrow(arg)
+end
+
+And(/^I click on the the medicine dropdown$/) do
+  @test_page.click_div
+end
+
+And(/^I click the add button$/) do
+  @test_page.click_add
+end
+
+And(/^I change the instructions$/) do
+  @test_page.change_instructions
+end
