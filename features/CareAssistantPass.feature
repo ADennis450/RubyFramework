@@ -10,3 +10,4 @@ Feature: Passed Virtual Care Assistant Test
     Given I click on the dropdown "arrow"
     And I click on the the medicine dropdown
     And I change the instructions
+    Then write "the test completed with no errors"

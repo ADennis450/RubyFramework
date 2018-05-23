@@ -67,3 +67,7 @@ end
 Given(/^I make the test fail$/) do
   raise 'You Fail!!!'
 end
+
+Then(/^write "([^"]*)"$/) do |arg|
+  puts arg
+end

@@ -10,3 +10,4 @@ Feature: Failed Virtual Care Assistant Test
     And I click on the the medicine dropdown
     And I change the instructions
     And I make the test fail
+    Then write "the test completed with errors"
