@@ -63,3 +63,7 @@ end
 And(/^I change the instructions$/) do
   @test_page.change_instructions
 end
+
+Given(/^I make the test fail$/) do
+  raise 'You Fail!!!'
+end
