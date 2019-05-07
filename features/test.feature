@@ -1,4 +1,4 @@
-
+@run
 Feature: Google Search
 
   Scenario: Go to Google
