@@ -2,7 +2,7 @@
 Feature: Google Search
 
   Scenario: Go to Google
-    Given I navigate to "http://virtualcareassistant-env.wq7snpycas.us-east-2.elasticbeanstalk.com/"
+    Given I navigate to "http://google.com/"
     And I do a search for "Sogeti"
     And I click on the sogeti link
     And I wait 5 seconds
